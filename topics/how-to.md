@@ -1,7 +1,6 @@
 [//]: # (title: How To...)
 [//]: # (auxiliary-id: viewpage.actionpageId113084582;How To...)
 
-
 On this page:
 
 <tag-list of="chapter" mode="tree"/>

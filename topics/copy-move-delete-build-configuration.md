@@ -2,7 +2,7 @@
 [//]: # (auxiliary-id: Copy, Move, Delete Build Configuration)
 To copy, move or delete a build configuration, use the __Actions__ menu on the right of the build configuration settings pages.
 
-### Copy and Move Build Configuration
+## Copy and Move Build Configuration
 
 Build configurations can be copied and moved to another project by project administrators:
 * A copy duplicates all the settings of the original build configuration, but no data related to builds is preserved. The copy is created with empty build history and no statistics. You can copy a build configuration into the same or another project.
@@ -17,7 +17,7 @@ If the build configuration uses VCS Roots or is associated with a template, whic
 When running TeamCity in the [Professional mode](licensing-policy.md#Licensing+Overview) with the maximum allowed number of build configurations (100 build configurations and prior to TeamCity 2017.2 \- 20) unless you purchased additional Build Agent licenses), the __Copy__ option will not be displayed for build configurations.
 </note>
 
-### Delete Build Configuration
+## Delete Build Configuration
 
 When you delete a build configuration, TeamCity will remove its `.xml` configuration file. After the deletion, there is a [configurable](clean-up.md#Deleted+Build+Configurations+Clean-up) timeout (5 days by default) before the builds of the deleted configuration are removed during the build history clean-up.
 

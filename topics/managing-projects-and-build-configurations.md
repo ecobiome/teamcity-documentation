@@ -5,7 +5,7 @@
 * using the [REST API](rest-api.md)
 * programmatically using DSL based on the Kotlin language if the [versioned settings](storing-project-settings-in-version-control.md) feature is enabled
 
-### Configuring Visibility
+## Configuring Visibility
 
 The __Configure Visible Projects__ pop-up menu on the __Projects__ page allows reordering the projects and change their visibility in the list of projects.
 

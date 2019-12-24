@@ -2,8 +2,6 @@
 [//]: # (auxiliary-id: Using AWS Aurora Database Cluster)
 This page provides details on using an [Amazon Aurora](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Aurora.Overview.html) cluster as the TeamCity database server.
 
-<tag-list of="chapter" mode="tree" depth="4"/>
-
 ## Overview
 
 When using an AWS Aurora cluster with TeamCity pointing to the [cluster end-point](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Aurora.html#Aurora.Overview.Endpoints) as the database server, it is important to understand what happens when an AWS Aurora cluster fails over.

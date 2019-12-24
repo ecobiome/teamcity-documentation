@@ -2,10 +2,6 @@
 [//]: # (auxiliary-id: NAnt)
 TeamCity supports NAnt starting from version 0.85.
 
-On this page:
-
-<tag-list of="chapter" mode="tree" depth="4"/>
-
 <note>
 
 The TeamCity NAnt runner requires .NET Framework or Mono installed on the build agent.

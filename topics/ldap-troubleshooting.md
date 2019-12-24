@@ -1,21 +1,15 @@
 [//]: # (title: LDAP Troubleshooting)
 [//]: # (auxiliary-id: LDAP Troubleshooting)
+
 __General advice__: if you experience problems with LDAP configuration, turn on the debug logging (see [Reporting Issues](reporting-issues.md)).
-
-
 
 On this page:
 
 <tag-list of="chapter" mode="tree" depth="4"/>
 
-
-
 ## Cannot authenticate using LDAP
 
-
-
 Check the `teamcity-ldap.log` file. For each unsuccessful login attempt there should be a reason specified. Most commonly these are:
-
 	
 * The login filter doesn't match the entered login ("_User-entered login does not match teamcity.auth.loginFilter=..., aborting_")
 * The LDAP server rejected login with the "Invalid credentials" message ("_Failed to login user '...' due to authentication error. Cause: Invalid credentials (\[LDAP: error code 49 - 80090308: LdapErr: DSID\-0C090334, comment: AcceptSecurityContext error, data 525, vece\^\@\])_")

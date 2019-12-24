@@ -13,11 +13,6 @@ It is recommended to configure LDAP authentication on a test server before enabl
 
 LDAP integration might be not trivial to configure, so it might require some trial and error approach to get the right settings. Please review [Typical LDAP Configurations](typical-ldap-configurations.md). If a problem occurs, [LDAP logs](#Debugging+LDAP+Integration) should give you enough information to understand possible misconfigurations. If you are experiencing difficulties configuring LDAP integration after going through this document and investigating the logs, please [contact us](https://confluence.jetbrains.com/display/TW/Feedback) and let us know your LDAP settings with a detailed description of what you want to achieve and what you currently get.
 
-On this page:
-
-<tag-list of="chapter" mode="tree" depth="4"/>
-
-
 ## Authentication
 
 To allow logging into TeamCity with LDAP credentials, you need to configure LDAP connection settings in the `ldap-config.properties` file and enable LDAP authentication in the server's [Authentication section](configuring-authentication-settings.md).

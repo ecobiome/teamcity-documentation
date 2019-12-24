@@ -1,7 +1,6 @@
 [//]: # (title: REST API)
 [//]: # (auxiliary-id: REST API)
 
-<tag-list of="chapter" mode="tree" depth="5"/>
 
 ## General information
  

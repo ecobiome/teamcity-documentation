@@ -8,11 +8,6 @@ The __Duplicates finder (ReSharper)__ build runner based on [ReSharper Command L
 This runner requires .NET Framework 4.6.1 (or higher) to be installed on the agent where builds will run.
 </note>
 
-On this page:
-
-<tag-list of="chapter" mode="tree" depth="4"/>
- 
-
 ## Sources
 
 <table><tr>

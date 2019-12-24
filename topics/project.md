@@ -4,10 +4,7 @@
 
 A _project_ in TeamCity is a collection of [build configurations](build-configuration.md). A TeamCity project can correspond to a software project, a specific version/release of a project or any other logical group of the build configurations.     
 The project has a name, an [ID](identifier.md), and an optional description.   
-In TeamCity, user [roles and permissions](role-and-permission.md) are managed on a per\-project basis.   
-
-<tag-list of="chapter" mode="tree" depth="4"/>
-
+In TeamCity, user [roles and permissions](role-and-permission.md) are managed on a per-project basis.   
 
 ## Project Hierarchy
 

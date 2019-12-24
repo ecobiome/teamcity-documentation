@@ -16,8 +16,6 @@ If you want to run ReSharper inspections using a specific ReSharper version (for
 
 This page contains reference information about the __Inspections (.NET)__ Build Runner fields:
 
-<tag-list of="chapter" mode="tree" depth="4"/>
-
 You can also refer to [ReSharper documentation](https://www.jetbrains.com/help/resharper/Detect_code_issues_in_a_build_using_ReSharper_and_TeamCity.html) for more details.
 
 <note>

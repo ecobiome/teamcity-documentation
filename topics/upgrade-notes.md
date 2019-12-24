@@ -1,6 +1,10 @@
 [//]: # (title: Upgrade Notes)
 [//]: # (auxiliary-id: Upgrade Notes)
 
+On this page:
+
+<tag-list of="chapter" mode="tree" depth="4"/>
+
 ## Changes from 2019.1.x to 2019.2
 
 ### Switch to 64-bit Bundled Java in Windows installer and Docker images

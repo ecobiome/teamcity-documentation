@@ -9,10 +9,6 @@ __Since TeamCity 2018.2__, you can configure multiple NuGet feeds for a project 
 TeamCity running on any of the supported operating systems (Windows, Linux, macOS) can be used as a NuGet feed.
 </note>
 
-On this page:
-
-<tag-list of="chapter" mode="tree" depth="4"/>
-
 ## Enabling NuGet Feed
 
 To start using TeamCity as a NuGet Server, you need to enable the NuGet Feed at the project level.

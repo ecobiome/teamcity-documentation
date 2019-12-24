@@ -2,10 +2,6 @@
 [//]: # (auxiliary-id: VCS Labeling)
 TeamCity can label (tag) sources of a particular build (automatically or manually) in your version control. The list of labels applied and their application status is displayed on the [Changes tab](working-with-build-results.md#Changes) of the build results page.
 
-On this page:
-
-<tag-list of="chapter" mode="tree" depth="4"/>
-
 ## Automatic VCS labeling
 
 You can set TeamCity to label the sources of a build depending on the build status automatically. The process takes place in the background after the build finishes and does not affect the build status, which means that a labeling failure is not a standard [notification event](subscribing-to-notifications.md#Which+Events+Will+Trigger+Notifications). However, the users subscribed for [notifications about failed builds](subscribing-to-notifications.md#Which+Events+Will+Trigger+Notifications) of the current build configuration will be notified about a labeling failure.

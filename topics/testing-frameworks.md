@@ -26,7 +26,7 @@ See also external [plugins](https://plugins.jetbrains.com/teamcity).
 
 Also, you can import test run XML reports of supported formats with [XML Report Processing](xml-report-processing.md).
 
-### Custom Testing Frameworks
+## Custom Testing Frameworks
 
 If there is no TeamCity support yet for your testing framework, you can report tests progress to TeamCity from the build via [service messages](build-script-interaction-with-teamcity.md#Reporting+Tests) or generate one of the supported [XML reports](xml-report-processing.md) in the build.
 

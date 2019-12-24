@@ -2,10 +2,6 @@
 [//]: # (auxiliary-id: Installation)
 If you are upgrading your existing TeamCity installation, refer to [Upgrade](upgrade.md).
 
-On this page:
-
-<tag-list of="chapter" mode="tree" depth="4"/>
-
 ## Check System Requirements
 
 Before you install TeamCity, please read about the [Supported Platforms and Environments](supported-platforms-and-environments.md). Additionally, read the [hardware requirements for TeamCity](how-to.md#Estimate-Hardware-Requirements-for-TeamCity). Note that these requirements differ significantly depending on the server load and the number of builds run.

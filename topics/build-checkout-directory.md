@@ -1,9 +1,6 @@
 [//]: # (title: Build Checkout Directory)
 [//]: # (auxiliary-id: Build Checkout Directory)
 
-<tag-list of="chapter" mode="tree" depth="4"/>
-
-
 The _build checkout directory_ is a directory on the TeamCity agent machine where all the sources of all builds are checked out into.
 * If you use the [agent-side checkout mode](vcs-checkout-mode.md#agent-checkout), the build agent checks out the sources into this directory before the build.
 * In case you use the [server-side checkout mode](vcs-checkout-mode.md#server-checkout), the TeamCity server sends incremental patches to the agent to update only the files changed since the last build in the given checkout directory.

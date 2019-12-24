@@ -26,12 +26,9 @@ The runner also supports Maven2 or above: to use `pom.xml`, you need to open it 
 It is a good idea to execute `mvn install` as the step preceeding the inspecitons step in order to allow projects with dependencies to be resolved successfully.
 </note>
 
-
 This page contains reference information about the following __Inspections (IntelliJ IDEA)__ Build Runner fields:
 
-<tag-list of="chapter" mode="tree" depth="4"/>
-
-### IntelliJ IDEA Project Settings
+## IntelliJ IDEA Project Settings
 
 <table><tr>
 
@@ -145,7 +142,7 @@ Optional, specify if differs from the checkout directory.
 
 </td></tr></table>
 
-### Unresolved Project Modules and Path Variables
+## Unresolved Project Modules and Path Variables
 
 This section is displayed when an IntelliJ IDEA module file (`.iml`) referenced from an IntelliJ IDEA project file:
 * cannot be found
@@ -183,7 +180,7 @@ This field appears if the project file contains path macros, defined in the Path
 
 </td></tr></table>
 
-### Project SDKs
+## Project SDKs
 
 This section provides the list of SDKs detected in the project.
 
@@ -292,7 +289,7 @@ You can use references to external properties when defining the values, like `%s
 
 <include src="ant.md" include-id="java-param"/>
 
-### Inspection Parameters
+## Inspection Parameters
 
 In IntelliJ IDEA\-based IDEs, the code inspections reported are configured by an [inspection profile](http://www.jetbrains.com/idea/webhelp/code-inspection.html#d559109e437).    
 When running the inspections in TeamCity, you can specify the inspection profile to use: first you need to configure the inspection profile in IntelliJ IDEA\-based IDE and then specify it in TeamCity.
@@ -410,7 +407,7 @@ For the file paths to be reported correctly, the "References to resources outsid
 
 For Maven inspections run, to ensure correct Java is used for the project JDK, define `env.JAVA_HOME` configuration parameter pointing to the JDK to be used as the project JDK.
 
-### Getting the same results in IntelliJ IDEA and TeamCity Inspections Build
+## Getting the same results in IntelliJ IDEA and TeamCity Inspections Build
 
 The code inspections reported by IntelliJ IDEA and TeamCity Java Code Inspections build depend on a number of factors. You would need to ensure equal settings in IntelliJ IDEA and the build to get the same reports. The relevant settings include:
 * [inspections profile](#Inspection+Parameters) used in IntelliJ IDEA and TeamCity build;

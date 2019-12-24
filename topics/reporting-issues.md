@@ -5,7 +5,7 @@ If you experience problems running TeamCity and believe they are related to the 
 
 To fix a problem, we may need a wide range of information about your system as well as various logs. The section below explains how to collect such information for different issues.
 
-In this section:
+On this page:
 
 <tag-list of="chapter" mode="tree" depth="4"/>
 

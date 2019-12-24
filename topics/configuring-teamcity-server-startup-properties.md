@@ -8,10 +8,6 @@ Various aspects of TeamCity behavior can be customized through a set options pas
 You do not need to specify any of the options unless you are advised to do by the TeamCity support team or you are confident in what you are doing.
 </note>
 
-On this page:
-
-<tag-list of="chapter" mode="tree" depth="4"/>
-
 ## TeamCity internal properties 
 
 TeamCity has internal configuration properties which affect various aspects of the internal logic. These are normally meant for debugging, changing internal constants or enabling experimental behavior. Please do not change the internal properties unless asked by TeamCity support.

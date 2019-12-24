@@ -3,10 +3,6 @@
 
 You can run the TeamCity stack in AWS using the official [CloudFormation template](https://github.com/JetBrains/teamcity-cloudformation-template). Note that this is an experimental option, which is currently in progress.
 
-On this page:
-
-<tag-list of="chapter" mode="tree" depth="4"/>
-
 ## Stack Overview
 
 The current setup uses 2 subnets, a public and a private one.

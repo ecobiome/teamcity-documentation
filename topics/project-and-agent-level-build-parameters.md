@@ -2,10 +2,6 @@
 [//]: # (auxiliary-id: Project and Agent Level Build Parameters)
 In addition to defining [build parameters](configuring-build-parameters.md) in Build Configuration settings, you can define them on the project or build agent level.
 
-On this page:
-
-<tag-list of="chapter" mode="tree" depth="4"/>
-
 ## Project Level Build Parameters
 
 TeamCity allows you to define build parameters for a project, __all__ its subprojects and build configurations in one place: __Project Settings__ \> __Parameters__ tab.

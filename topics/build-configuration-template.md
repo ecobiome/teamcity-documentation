@@ -1,10 +1,6 @@
 [//]: # (title: Build Configuration Template)
 [//]: # (auxiliary-id: Build Configuration Template)
 
-<tag-list of="chapter" mode="tree" depth="4"/>
-
-## Overview
-
 _Build configuration templates_ allow you to eliminate duplication of build configuration settings. If you want to have several similar (not necessarily identical) build configurations and be able to modify their common settings in one place without having to edit each configuration, create a build configuration template with those settings. Modifying template settings affects __all__ build configurations associated with this template.
 
 It is possible to define a default template in a project for all build configurations in this project and its subprojects. The [section below](#Defining+default+template+for+project) contains details.

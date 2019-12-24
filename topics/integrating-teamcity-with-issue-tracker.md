@@ -6,10 +6,6 @@ The integration is configured at the project level: the Project Administrator pe
 
 Enabling integration for the project also enables it for all its subprojects; if the configuration settings are different in a subproject, its settings have priority over the project's settings.
 
-On this page:
-
-<tag-list of="chapter" mode="tree" depth="4"/>
-
 ## Dedicated Support for Issue Trackers
 
 
