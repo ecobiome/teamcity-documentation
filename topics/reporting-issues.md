@@ -5,10 +5,6 @@ If you experience problems running TeamCity and believe they are related to the 
 
 To fix a problem, we may need a wide range of information about your system as well as various logs. The section below explains how to collect such information for different issues.
 
-On this page:
-
-<tag-list of="chapter" mode="tree" depth="4"/>
-
 ## Best Practices When Reporting Issues
 
 Following these guidelines will ensure timely response and effective issue resolution. Check [Feedback](https://confluence.jetbrains.com/display/TW/Feedback) for appropriate ways to contact us.

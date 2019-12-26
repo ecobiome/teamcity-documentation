@@ -1,10 +1,6 @@
 [//]: # (title: Common Problems)
 [//]: # (auxiliary-id: Common Problems)
 
-On this page:
-
-<tag-list of="chapter" mode="tree" depth="4"/>
-
 ## Most frequently used documentation sections
 
 * [Configuring server memory settings](installing-and-configuring-the-teamcity-server.md)  

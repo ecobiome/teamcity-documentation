@@ -1,10 +1,6 @@
 [//]: # (title: Known Issues)
 [//]: # (auxiliary-id: Known Issues)
 
-This page contains a list of workarounds for known issues in TeamCity.
-
-<tag-list of="chapter" mode="tree" depth="4"/>
-
 ## Agent running as Windows Service Limitations
 
 When a TeamCity build agent is installed as a Windows service, there may appear various "Permission denied" or "Access denied" errors during the build process, see details below.

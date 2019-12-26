@@ -3,10 +3,6 @@
 
 __General advice__: if you experience problems with LDAP configuration, turn on the debug logging (see [Reporting Issues](reporting-issues.md)).
 
-On this page:
-
-<tag-list of="chapter" mode="tree" depth="4"/>
-
 ## Cannot authenticate using LDAP
 
 Check the `teamcity-ldap.log` file. For each unsuccessful login attempt there should be a reason specified. Most commonly these are:

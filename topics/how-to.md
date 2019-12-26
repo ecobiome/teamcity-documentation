@@ -1,10 +1,6 @@
 [//]: # (title: How To...)
 [//]: # (auxiliary-id: viewpage.actionpageId113084582;How To...)
 
-On this page:
-
-<tag-list of="chapter" mode="tree"/>
-
 ## Choose OS/Platform for TeamCity Server
 
 Once the server/OS fulfills the [requirements](supported-platforms-and-environments.md#TeamCity+Server), TeamCity can run on any system. Please also review the [requirements](supported-platforms-and-environments.md) for the integrations you plan to use, for example the following functionality requires or works better when TeamCity server is installed under Windows:
