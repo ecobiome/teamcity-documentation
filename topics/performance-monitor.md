@@ -15,6 +15,6 @@ When enabled, each build has an additional tab called __PerfMon__ on the build r
 
 Clicking on a point in the graph displays the corresponding value (CPU in  screenshot below) as well as the build log with the highlighted fragment for the selected time:
 
-<img src="performance-monitor.png" width="1433" alt="Performance monitor"/>
+<img src="performance-monitor.png" width="750" alt="Performance monitor"/>
 
 __ __

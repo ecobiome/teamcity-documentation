@@ -5,7 +5,7 @@ This page details creating build configurations via the TeamCity web UI. Other o
 
 To create a build configuration, open __General Settings__ of a project and click __Create build configuration__ under the __Build Configurations__ section.
 
-<img src="create-build-configuration-button.png" alt="Create a build configuration" width="804"/>
+<img src="create-build-configuration-button.png" alt="Create a build configuration" width="750"/>
 
 TeamCity provides several ways to create a new [build configuration](build-configuration.md) for a project:
 

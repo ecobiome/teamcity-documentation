@@ -126,7 +126,7 @@ If you are using IntelliJ IDEA, you can easily start debugging of any Maven task
 1. Navigate to __View | Tool Windows | Maven Projects__. The __Maven Projects__ tool window is displayed.
 2. Locate the task node: __Plugins | teamcity-configs | teamcity-configs:generate__, the __Debug__ option is available in the context menu for the task:
 
-<img src="NewKotlinDebug.png" width="1320" alt="Debugging a task in IDEA"/>
+<img src="NewKotlinDebug.png" width="750" alt="Debugging a task in IDEA"/>
 
 
 ### Editing Project Settings via Web UI
@@ -361,7 +361,7 @@ However, if you need to modify the build configuration ID in the DSL, note that 
 
 To restore the build history after changing the build configuration ID, go to the __Build Configuration Settings__ of the build configuration whose id was changed, open the __Actions__ menu, and click __Attach build history__. You will be redirected to the __Attach Build History__ tab. Select the one of the detached build history and click __Attach__. If you are not sure what build history to use, you can take a look at the build results page for the last build in this history.
 
-<img src="attach-build-history.png" width="1283" alt="Attaching a build history"/>
+<img src="attach-build-history.png" width="750" alt="Attaching a build history"/>
 
 ### Ability to Use External Libraries
 
