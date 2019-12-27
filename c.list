@@ -4,6 +4,8 @@
 <categories>
     <category id="kotlin" name="Kotlin" order="26"/>
     <category id="admin-guide" name="Administrator's Guide" order="54"/>
+    <category id="concepts" name="Concepts" order="601"/>
+    <category id="installation" name="Installation and Upgrade" order="601"/>
     <category id="pdf_resources" name="PDF Resources" order="500"/>
     <category name="Search" id="search" order="11"/>
     <category id="web_resources" name="Web Resources" order="99"/>
