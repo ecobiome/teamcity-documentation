@@ -1394,16 +1394,3 @@ Release stages that we generally have are:
 The dates of previous releases and the sequence of TeamCity versions are listed on the [Previous Releases Downloads](https://confluence.jetbrains.com/display/TW/Previous+Releases+Downloads) page.
 
 [//]: # (Internal note. Do not delete. "How To...d160e3129.txt")    
-
-__ __
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
