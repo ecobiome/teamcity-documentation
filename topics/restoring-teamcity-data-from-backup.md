@@ -140,10 +140,9 @@ maintainDB.[cmd|sh] restore <all previously used restore options> --continue
 
 [//]: # (Internal note. Do not delete. "Restoring TeamCity Data from Backupd270e422.txt")    
 
-__ __
 
-__See also:__
-
-__Administrator's Guide__: [Creating Backup via maintainDB command-line tool](creating-backup-via-maintaindb-command-line-tool.md)
-
-__ __
+<seealso>
+        <category ref="admin-guide">
+            <a href="creating-backup-via-maintaindb-command-line-tool.md">Creating Backup via maintainDB command-line tool</a>
+        </category>
+</seealso>

@@ -98,14 +98,16 @@ Build promotion affects only a single run of the dependent build. Once you click
 
 More details are available in the [related blog-post](http://blog.jetbrains.com/teamcity/2012/04/teamcity-build-dependencies-2/).
 
-
-
- __  __
-
-__See also:__
-
-
-__Concepts__: [Build Queue](build-queue.md) | [Dependent Build](dependent-build.md) | [Personal Build](personal-build.md)   
-__Administrator's Guide__: [Configuring Build Triggers](configuring-build-triggers.md)
-
-__ __
+<seealso>
+        <category ref="installation">
+            <a href="upgrade.md">Upgrade</a>
+        </category>
+        <category ref="concepts">
+            <a href="build-queue.md">Build Queue</a>
+            <a href="dependent-build.md">Dependent Build</a>
+            <a href="personal-build.md">Personal Build</a>
+        </category>
+        <category ref="admin-guide">
+            <a href="configuring-build-triggers.md">Configuring Build Triggers</a>
+        </category>
+</seealso>

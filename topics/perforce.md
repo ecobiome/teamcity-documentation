@@ -409,13 +409,8 @@ Refer to a [separate page](perforce-vcs-compatibility.md).
 
 Refer to a [separate page](perforce-streams-as-feature-branches.md).
 
-
-
-__  __
-
-__See also:__
-
-
-__Administrator's Guide__: [VCS Checkout Mode](vcs-checkout-mode.md) 
-
-__ __
+<seealso>
+        <category ref="admin-guide">
+            <a href="vcs-checkout-mode.md">VCS Checkout Mode</a>
+        </category>
+</seealso>

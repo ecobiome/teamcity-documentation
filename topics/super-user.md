@@ -8,8 +8,6 @@ The authentication token is automatically generated on every server start. The t
 
 To log in as a super user, use an empty username and the authentication token as the password on the login page. 
 
- 
-
 A super user is not a usual TeamCity user and does not have any personal settings, such as __Changes__ page and Profile section (i.e. there is no way to receive notifications). The super user has all [System Administrator permissions](role-and-permission.md).
 
 Any number of super users can log in to TeamCity simultaneously without affecting each other's sessions.
@@ -18,11 +16,8 @@ Instead of using an empty username, you can also go to the `<Your TeamCity serve
 
 The super user login is enabled by default, but it can be disabled by specifying the `teamcity.superUser.disable=true` [internal property](configuring-teamcity-server-startup-properties.md#TeamCity+internal+properties).
 
- __  __
-
-__See also:__
-
-
-__Concepts__: [Guest User](guest-user.md)
-
-__ __
+<seealso>
+        <category ref="concepts">
+            <a href="guest-user.md">Guest User</a>
+        </category>
+</seealso>

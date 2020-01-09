@@ -47,11 +47,10 @@ Any of these steps may solve your issue. Feel free to leave feedback of you expe
 	
 * Specify the `VCBuildAdditionalOptions` property with value `/useenv` in the build configuration settings to instruct msbuild to add the `/useenv` commandline argument for spawned vcbuild processes.
 
-__ __
- 
- __See also:__
 
-
-__Administrator's Guide__: [.NET Testing Frameworks Support](net-testing-frameworks-support.md) | [NUnit support](nunit-support.md)
-
-__ __
+<seealso>
+        <category ref="admin-guide">
+            <a href="net-testing-frameworks-support.md">.NET Testing Frameworks Support</a>
+            <a href="nunit-support.md">NUnit support</a>
+        </category>
+</seealso>

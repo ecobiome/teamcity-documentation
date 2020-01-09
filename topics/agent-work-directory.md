@@ -13,13 +13,11 @@ Note that TeamCity assumes full control over the directory and can [delete subdi
 For more information on handling the directories inside the agent work directory, refer to [Build Checkout Directory](build-checkout-directory.md) section.
 
 
-[//]: # (Internal note. Do not delete. "Agent Work Directoryd10e43.txt")    
+[//]: # (Internal note. Do not delete. "Agent Work Directoryd10e43.txt")
 
-
-__  __
-
-__See also:__
-
-__Concepts__: [Build Agent](build-agent.md) | [Build Checkout Directory](build-checkout-directory.md)
-
-__ __
+<seealso>
+        <category ref="concepts">
+            <a href="build-agent.md">Build Agent</a>
+            <a href="build-checkout-directory.md">Build Checkout Directory</a>
+        </category>
+</seealso>

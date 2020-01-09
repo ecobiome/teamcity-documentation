@@ -273,13 +273,10 @@ Run recently failed tests first
 
 If checked, in the first place TeamCity will run tests failed in previous finished or running builds as well as tests having high failure rate (a so called _blinking_ tests)
 
-
 </td></tr></table>
 
-__  __
-
-__See also:__
-
-__Administrator's Guide__: [NUnit for MSBuild](nunit-for-msbuild.md)
-
-__ __
+<seealso>
+        <category ref="admin-guide">
+            <a href="nunit-for-msbuild.md">NUnit for MSBuild</a>
+        </category>
+</seealso>

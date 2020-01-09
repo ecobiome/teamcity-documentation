@@ -4,8 +4,6 @@
 Each build in TeamCity is assigned a build number, which is a string identifier composed according to the pattern specified in the build configuration setting on the [Configuring General Settings](configuring-general-settings.md) page. 
 This number is displayed in the UI and passed into the build as a [Predefined Build Parameter](predefined-build-parameters.md). 
 
-
-
 A build number can be:
 
 * [Used to download artifacts](patterns-for-accessing-build-artifacts.md#Obtaining+Artifacts) 	
@@ -15,10 +13,8 @@ A build number can be:
 * [Set with help of service messages](build-script-interaction-with-teamcity.md#Reporting+Build+Number)
 
 
- __  __
-
-__See also:__
-
-__Administrator's Guide__: [Configuring General Settings](configuring-general-settings.md)
-
-__ __
+<seealso>
+        <category ref="admin-guide">
+            <a href="configuring-general-settings.md">Configuring General Settings</a>
+        </category>
+</seealso>

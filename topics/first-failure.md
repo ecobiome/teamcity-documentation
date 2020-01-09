@@ -8,11 +8,8 @@ This is the build where TeamCity detected the first failure of this test for the
 
 A test which is run several times within a single build is counted as one test (i.e. all invocations of the same test are counted as 1).
 
-
-__  __
-
-__See also:__
-
-__Concepts__: [Already Fixed In](already-fixed-in.md)
-
-__ __
+<seealso>
+        <category ref="concepts">
+            <a href="already-fixed-in.md">Already Fixed In</a>
+        </category>
+</seealso>

@@ -15,11 +15,9 @@ Details on configuring code coverage can be found on the following pages:
 <toc>
 </toc>
 
- 
- __  __
 
-__See also:__
-
-__Administrator's Guide__: [NUnit Support](nunit-support.md)
-
-__ __
+<seealso>
+        <category ref="admin-guide">
+            <a href="nunit-support.md">NUnit Support</a>
+        </category>
+</seealso>

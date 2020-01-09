@@ -80,12 +80,11 @@ The settings are available in the current project and its subprojects. To overri
 
 For the logic of Maven settings, refer to the related Maven [documentation](http://maven.apache.org/settings.html).
 
-User\-level settings can be configured in the [Maven Artifact Dependency Trigger](configuring-maven-triggers.md#Maven+Artifact+Dependency+Trigger).
+User-level settings can be configured in the [Maven Artifact Dependency Trigger](configuring-maven-triggers.md#Maven+Artifact+Dependency+Trigger).
 
- __  __
- 
-__See also:__
-
-__Administrator's Guide__: [Maven](maven.md) | [Maven Artifact Dependency Trigger](configuring-maven-triggers.md)
-
-__ __
+<seealso>
+        <category ref="admin-guide">
+            <a href="maven.md">Maven</a>
+            <a href="configuring-maven-triggers.md">Maven Artifact Dependency Trigger</a>
+        </category>
+</seealso>

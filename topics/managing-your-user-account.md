@@ -49,11 +49,12 @@ In the top right corner of the screen, click the arrow next to your username, an
 * To view the list of user groups you are in, go to the __Groups__ tab.
 * To view your roles and permissions in different projects, go to the __Roles__ tab. Note, that roles are assigned to the user by the system administrator.
 
-__ __
-
-__See also:__
-
-__Concepts__: [Role and Permission](role-and-permission.md)   
-__User's Guide__: [Viewing Your Changes](viewing-your-changes.md) | [Subscribing to Notifications](subscribing-to-notifications.md) 
-
-__ __
+<seealso>
+        <category ref="concepts">
+            <a href="role-and-permission.md">Role and Permission</a>
+        </category>
+        <category ref="user-guide">
+            <a href="viewing-your-changes.md">Viewing Your Changes</a>
+            <a href="subscribing-to-notifications.md">Subscribing to Notifications</a>
+        </category>
+</seealso>

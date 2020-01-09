@@ -117,12 +117,10 @@ Check the option to fail a build if the Ruby environment configurator cannot pas
 </tr>
 </table>
 
-
-
-__ __
-
-__See also:__
-
-__Administrator's Guide__: [Configuring Build Steps](configuring-build-steps.md) | [Command Line](command-line.md) | [Rake](rake.md)
-
-__ __
+<seealso>
+        <category ref="admin-guide">
+            <a href="configuring-build-steps.md">Configuring Build Steps</a>
+            <a href="command-line.md">Command Line</a>
+            <a href="rake.md">Rake</a>
+        </category>
+</seealso>

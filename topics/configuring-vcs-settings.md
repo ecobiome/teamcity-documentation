@@ -134,13 +134,13 @@ You can use a [Branch Filter](branch-filter.md) to limit the set of branches ava
 ## Other VCS-Related Settings
 * Configure [VCS trigger](configuring-vcs-triggers.md) if you want the build to be started on new changes detection.
 * Additionally, you can add a label into the version control system for the sources used for a particular build by means of [VCS Labeling](vcs-labeling.md) build feature.
- 
- 
- 
- __  __
 
-__See also:__
 
-__Administrator's Guide__: [Configuring VCS Roots](configuring-vcs-roots.md) | [VCS Checkout Rules](vcs-checkout-rules.md) | [VCS Checkout Mode](vcs-checkout-mode.md) | [VCS Labeling](vcs-labeling.md)
-
-__ __
+<seealso>
+        <category ref="admin-guide">
+            <a href="configuring-vcs-roots.md">Configuring VCS Roots</a>
+            <a href="vcs-checkout-rules.md">VCS Checkout Rules</a>
+            <a href="vcs-checkout-mode.md">VCS Checkout Mode</a>
+            <a href="vcs-labeling.md">VCS Labeling</a>
+        </category>
+</seealso>

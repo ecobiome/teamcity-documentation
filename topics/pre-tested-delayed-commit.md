@@ -49,13 +49,16 @@ If upon changed files choosing TeamCity is unable to find build configurations t
 * The TeamCity IDE plugin pings the TeamCity server to check if all the selected build configurations have personal builds ready. If a build fails, a notification is displayed in the IDE and the process ends.
 * If all the personal builds finish successfully, the IDE plugin displays a progress, backs up the current version of the files participating in the personal change (as they might already be modified since the pre\-tested commit was intitiated), then restores the file contents from the saved "patch", performs the version control commit (reports an error if there was an error like a VCS conflict) and restores the just backed up files to bring the working copy in the last seen state. The pre\-tested commit in the TeamCity plugin window gets an error or success mark.
 
-
-__  __
-
-__See also:__
-
-__Concepts__: [Remote Run](remote-run.md)   
-__Remote Run on Branch__: [Remote Run on Branch Build Trigger for Git and Mercurial](branch-remote-run-trigger.md)   
-__Installing Tools__: [IntelliJ Platform Plugin](intellij-platform-plugin.md) | [Eclipse Plugin](eclipse-plugin.md) | [Visual Studio Addin](visual-studio-addin.md)
-
-__ __
+<seealso>
+        <category ref="inst_tools">
+            <a href="intellij-platform-plugin.md">IntelliJ Platform Plugin</a>
+            <a href="eclipse-plugin.md">Eclipse Plugin</a>
+            <a href="visual-studio-addin.md">Visual Studio Addin</a>
+        </category>
+        <category ref="concepts">
+            <a href="remote-run.md">Remote Run</a>
+        </category>
+        <category ref="admin-guide">
+            <a href="branch-remote-run-trigger.md">Remote Run on Branch Build Trigger for Git and Mercurial</a>
+        </category>
+</seealso>

@@ -312,10 +312,8 @@ To update TeamCity started from the CloudFormation template:
 6. Wait for the server to upgrade, log in to the TeamCity server and wait for the agent to upgrade and connect to the server.
 
 
-__  __
-
-__See also:__
-
-__TeamCity blog__: [The official TeamCity CloudFormation template](https://blog.jetbrains.com/teamcity/2017/10/teamcity-aws/)
-
-__ __
+<seealso>
+        <category ref="blog">
+            <a href="https://blog.jetbrains.com/teamcity/2017/10/teamcity-aws/">Official TeamCity CloudFormation template</a>
+        </category>
+</seealso>

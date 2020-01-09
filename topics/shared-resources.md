@@ -79,12 +79,8 @@ Clicking the resource name takes you back to the [shared resources configuration
 
 See the [Shared Resources plugin](https://plugins.jetbrains.com/plugin/9075-shared-resources) page.
 
-
-
-__  __
-
-__See also:__
-
-__JetBrains TV__: [TeamCity Shared Resources Screencast](http://tv.jetbrains.net/videocontent/teamcity-shared-resources)
-
-__ __
+<seealso>
+        <category ref="videos">
+            <a href="http://tv.jetbrains.net/videocontent/teamcity-shared-resources">JetBrains TV: TeamCity Shared Resources Screencast</a>
+        </category>
+</seealso>

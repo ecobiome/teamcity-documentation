@@ -138,12 +138,10 @@ There are builds that preserve all their data and are not affected during clean-
 * builds used as an [artifact of snapshot dependency](configuring-dependencies.md) in other builds when the "_[Prevent clean-up](#Base+Rule+Behavior+for+Dependency+Builds)_" option for dependencies is enabled in the build configuration. Such builds are marked with the ![link.png](link.png) icon in the build history list
 * builds of build configurations that were deleted less than one day ago
 
-[//]: # (Internal note. Do not delete. "Clean-Upd55e230.txt")    
+[//]: # (Internal note. Do not delete. "Clean-Upd55e230.txt")
 
-__  __
- 
-__See also:__
-
-__Concepts__: [Dependent Build](dependent-build.md)
-
-__ __
+<seealso>
+        <category ref="concepts">
+            <a href="dependent-build.md">Dependent Build</a>
+        </category>
+</seealso>
