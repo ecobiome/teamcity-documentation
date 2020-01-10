@@ -1,20 +1,18 @@
 [//]: # (title: REST API)
 [//]: # (auxiliary-id: REST API)
 
-This page describes the REST API that can be used for integrating applications with TeamCity and for creating script interactions with the TeamCity server.
+TeamCity provides a REST API for integrating external applications and creating script interactions with the TeamCity server.
 
-The page comprises three main sections:
-* [General Information](#General+Information) describes principles of the REST API authentication, structure of requests, and supported HTTP methods
-* [Response Formats](#Response+Formats) explains how to interpret responses received via the REST API
-* [REST API Reference](#REST+API+Reference) lists the most used requests and provides examples
+This page comprises three main sections:
+* __[General Information](#General+Information)__ describes principles of the REST API authentication, structure of requests, and supported HTTP methods.
+* __[Response Formats](#Response+Formats)__ explains how to interpret responses received via the REST API.
+* __[REST API Reference](#REST+API+Reference)__ lists the most used requests and provides examples.
 
 # General Information
  
 REST API is an open-source [plugin](https://github.com/JetBrains/teamcity-rest) bundled __since TeamCity 5.0__.
 
-TeamCity's REST API allows accessing resources (entities) via URL paths.
- 
-To use the REST API, an application makes an HTTP request to the TeamCity server and parses the response.
+TeamCity's REST API allows accessing resources (entities) via URL paths. To use the REST API, an external application makes an HTTP request to the TeamCity server and parses the response.
  
 ## General Usage Principles
 
@@ -269,7 +267,7 @@ When developing a client using the REST API, consider the following recommendati
 
 <table>
 
-<tr><td></td><td></td></tr>
+<tr><td width="200"></td><td></td></tr>
 <tr><td>List of projects</td>
 
 <td>
@@ -369,7 +367,7 @@ GET http://teamcity:8111/app/rest/buildTypes?locator=templateFlag:true
 
 <table>
 
-<tr><td></td><td></td></tr>
+<tr><td width="200"></td><td></td></tr>
 <tr><td>
 
 Get project details
@@ -509,7 +507,7 @@ Project features (for example, issue trackers, versioned settings, custom charts
 
 <table>
 
-<tr><td></td><td></td></tr>
+<tr><td width="200"></td><td></td></tr>
 <tr><td>
 
 List of project features
