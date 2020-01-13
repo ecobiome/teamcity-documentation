@@ -507,7 +507,7 @@ Project features (for example, issue trackers, versioned settings, custom charts
 
 <table>
 
-<tr><td width="200"></td><td></td></tr>
+<tr><td width="300"></td><td></td></tr>
 <tr><td>
 
 List of project features
