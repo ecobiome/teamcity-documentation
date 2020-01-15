@@ -1043,7 +1043,7 @@ http://teamcity:8111/app/rest/changes?locator=buildType:(id:buildConfigurationId
 
 Get pending changes for a build configuration
 
-/td>
+</td>
 
 <td>
 
@@ -1309,7 +1309,7 @@ Put `true` or `false` text as text/plain. See an [example](http://devnet.jetbrai
 
 Authorize/unauthorize an agent
 
-/td>
+</td>
 
 <td>
 
@@ -1325,9 +1325,41 @@ Put `true` or `false` text as text/plain.
 
 <tr><td>
 
+Get/put an agent's single field
+
+</td>
+
+<td>
+
+```Shell
+
+GET/PUT http://teamcity:8111/app/rest/agents/<agentLocator>/<field_name>
+ 
+```
+
+</td></tr>
+
+<tr><td>
+
+Delete a build agent
+
+</td>
+
+<td>
+
+```Shell
+
+DELETE http://teamcity:8111/app/rest/agents/<agentLocator>
+ 
+```
+
+</td></tr>
+
+<tr><td>
+
 Add a comment when enabling/disabling and authorizing/unauthorizing an agent
 
-/td>
+</td>
 
 <td>
 
@@ -1363,39 +1395,6 @@ curl -v -u user:password --request PUT "http://teamcity:8111/app/rest/agents/id:
 ```
 
 </td></tr>
-
-<tr><td>
-
-Get/put an agent's single field
-
-/td>
-
-<td>
-
-```Shell
-
-GET/PUT http://teamcity:8111/app/rest/agents/<agentLocator>/<field_name>
- 
-```
-
-</td></tr>
-
-<tr><td>
-
-Delete a build agent
-
-/td>
-
-<td>
-
-```Shell
-
-DELETE http://teamcity:8111/app/rest/agents/<agentLocator>
- 
-```
-
-</td></tr>
-
 
 </table>
  
