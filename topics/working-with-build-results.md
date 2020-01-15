@@ -306,7 +306,7 @@ Besides providing information about the build, the __Build Results__ page enable
 ### Removing Build
 
 The __Action__ menu provides two build removal options:
-* __Remove from queue__ – for a running build. This action cancels the running build and removes it from the [build queue](build-queue.md). The build itself stays in the [build history](build-history.md).   
+* __Remove from queue__ – for a running build. This action cancels a running build and removes it from the [build queue](build-queue.md). The build itself stays in the [build history](build-history.md).   
 The "Remove the build from queue" dialog allows you to:
     * Comment your action.
     * If the current build is a part of a [build chain](build-chain.md), selectively cancel other builds in the chain.
