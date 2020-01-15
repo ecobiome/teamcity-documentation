@@ -935,26 +935,130 @@ If you download artifacts from within a TeamCity build, consider [using](#REST+A
  
 ##### Changes
  
-`<changes>` is meant to represent changes the same way as displayed in the build's [Changes](working-with-build-results.md#Changes) in TeamCity UI. In the most cases these are the commits between the current and previous build. The `<changes>` tag is not included into the build by default, it has the href attribute only. If you execute the request specified in the href, you'll get the required changes.
+__`<changes>`__ is meant to represent changes the same way as displayed in the build's [Changes](working-with-build-results.md#Changes) in TeamCity UI. In the most cases these are the commits between the current and previous build. The `<changes>` tag is not included into the build by default, it has the href attribute only. If you execute the request specified in the href, you'll get the required changes.
+
+<table>
+
+<tr><td width="400"></td><td></td></tr>
+<tr><td>
+
+Get the list of all changes included into the build
+
+</td>
+
+<td>
+
+```Shell
+
+GET http://teamcity:8111/app/rest/changes?locator=build:(id:<buildId>)
  
-Get the list of all changes included into the build: `GET http://teamcity:8111/app/rest/changes?locator=build:(id:<buildId>)`.
+```
+
+</td></tr>
+<tr>
+
+<td>
+
+Get details of an individual change
+
+</td>
+
+<td>
+
+```Shell
+
+GET http://teamcity:8111/app/rest/changes/id:changeId
  
-Get details of an individual change: `GET` [`http://teamcity:8111/app/rest/changes/id:changeId`](http://teamcity:8111/app/rest/changes/id:changeId).
+```
+
+</td></tr>
+
+<tr><td>
+
+Get information about a changed file action
+
+</td>
+
+<td>
+
+The file's node lists changed files. The information about the changed file action is reported via the `changeType` attribute for the files listed as `added`, `edited`, `removed`, `copied`, or `unchanged`.
+
+</td></tr>
+
+<tr><td>
+
+Filter all changes by a locator
+
+</td>
+
+<td>
+
+```Shell
+
+GET http://teamcity:8111/app/rest/changes?locator=<changeLocator>
  
-Get information about a changed file action: the files node lists changed files. The information about the changed file action is reported via the `changeType` attribute for the files listed as one of the following: `added`, `edited`, `removed`, `copied` or `unchanged`.
+```
+
+<note>
+
+The change ID is the change's internal ID, not the revision. The ID can be seen in the change node listed by the REST API or in the URL of the change details (as `modId`).
+
+</note>
+
+</td></tr>
+
+<tr><td>
+
+Get all changes for a project
+
+</td>
+
+<td>
+
+```Shell
+
+GET http://teamcity:8111/app/rest/changes?locator=project:projectId
  
-Filter all changes by a locator: `GET` [`http://teamcity:8111/app/rest/changes?locator=<changeLocator>`](http://teamcity:8111/app/rest/changes?locator=<changeLocator>).
+```
+
+</td></tr>
+
+<tr><td>
+
+Get all the changes in a build configuration since a particular change identified by its ID
+
+</td>
+
+<td>
+
+```Shell
+
+http://teamcity:8111/app/rest/changes?locator=buildType:(id:buildConfigurationId),sinceChange:(id:changeId)
  
-Note that the change ID is the change's internal ID, not the revision. The ID can be seen in the change node listed by the REST API or in the URL of the change details (as `modId`).
+```
+
+</td></tr>
+
+<tr><td>
+
+Get pending changes for a build configuration
+
+/td>
+
+<td>
+
+```Shell
+
+http://teamcity:8111/app/rest/changes?locator=buildType:(id:BUILD_CONF_ID),pending:true
  
-Get all changes for a project: `GET` [`http://teamcity:8111/app/rest/changes?locator=project:projectId`](http://teamcity:8111/app/rest/changes?locator=project:projectId).
- 
-Get all the changes in a build configuration since a particular change identified by its ID: `http://teamcity:8111/app/rest/changes?locator=buildType:(id:buildConfigurationId),sinceChange:(id:changeId)`.
- 
-Get pending changes for a build configuration: `http://teamcity:8111/app/rest/changes?locator=buildType:(id:BUILD_CONF_ID),pending:true`.
- 
-The `<lastChanges>` tag contains information about the last commit included into the build. When triggering a build, its nested `<change>` element can contain the `locator` field that specifies what change to use for the build triggering.
- 
+```
+
+</td></tr>
+
+
+</table>
+
+The __`<lastChanges>`__ tag contains information about the last commit included into the build. When triggering a build, its nested `<change>` element can contain the `locator` field that specifies what change to use for the build triggering.
  
 ##### Revisions
  
@@ -1097,23 +1201,136 @@ To assign/replace investigations: `POST/PUT` to [`http://teamcity:8111/app/rest/
  
 ### Agents
  
-List agents (only authorized agents are included by default): `GET` [`http://teamcity:8111/app/rest/agents`](http://teamcity:8111/app/rest/agents).
+<table>
+
+<tr><td width="400"></td><td></td></tr>
+<tr><td>
+
+List agents (only authorized agents are included by default)
+
+</td>
+
+<td>
+
+```Shell
+
+GET http://teamcity:8111/app/rest/agents
  
-List all connected authorized agents: `GET` [`http://teamcity:8111/app/rest/agents?locator=connected:true,authorized:true`](http://teamcity:8111/app/rest/agents?locator=connected:true,authorized:true).
+```
+
+</td></tr>
+<tr>
+
+<td>
+
+List all connected authorized agents
+
+</td>
+
+<td>
+
+```Shell
+
+GET http://teamcity:8111/app/rest/agents?locator=connected:true,authorized:true
  
-List all authorized agents: `GET` [`http://teamcity:8111/app/rest/agents?locator=authorized:true`](http://teamcity:8111/app/rest/agents?locator=authorized:true).
+```
+
+</td></tr>
+
+<tr><td>
+
+List all authorized agents
+
+</td>
+
+<td>
+
+```Shell
+
+GET http://teamcity:8111/app/rest/agents?locator=authorized:true
  
-List all enabled authorized agents: `GET http://teamcity:8111/app/rest/agents?locator=enabled:true,authorized:true`.
+```
+
+</td></tr>
+
+<tr><td>
+
+List all enabled authorized agents
+
+</td>
+
+<td>
+
+```Shell
+
+GET http://teamcity:8111/app/rest/agents?locator=enabled:true,authorized:true
  
-List all agents (including unauthorized): `GET` [`http://teamcity:8111/app/rest/agents?locator=authorized:any`](http://teamcity:8111/app/rest/agents?locator=authorized:any).
+```
+
+</td></tr>
+
+<tr><td>
+
+List all agents (including unauthorized)
+
+</td>
+
+<td>
+
+```Shell
+
+GET http://teamcity:8111/app/rest/agents?locator=authorized:any
+ 
+```
+
 The request uses default filtering (depending on the specified locator dimensions, others can have default implied value). To disable this filtering, add `,defaultFilter:false` to the locator.
+
+</td></tr>
+
+<tr><td>
+
+Enable/disable an agent
+
+</td>
+
+<td>
+
+```Shell
+
+PUT http://teamcity:8111/app/rest/agents/<agentLocator>/enabled
  
-Enable/disable an agent: `PUT` [`http://teamcity:8111/app/rest/agents/<agentLocator>/enabled`](http://teamcity:8111/app/rest/agents/<agentLocator>/enabled) (put "true" or "false" text as text/plain). See an [example](http://devnet.jetbrains.net/message/5462246#5462246).
+```
+
+Put `true` or `false` text as text/plain. See an [example](http://devnet.jetbrains.net/message/5462246#5462246).
+
+</td></tr>
+
+<tr><td>
+
+Authorize/unauthorize an agent
+
+/td>
+
+<td>
+
+```Shell
+
+PUT http://teamcity:8111/app/rest/agents/<agentLocator>/authorized
  
-Authorize/unauthorize an agent: `PUT` [`http://teamcity:8111/app/rest/agents/<agentLocator>/authorized`](http://teamcity:8111/app/rest/agents/<agentLocator>/authorized) (put "true" or "false" text as text/plain).
- 
-Add a comment when enabling/disabling and authorizing/unauthorizing an agent:
- 
+```
+
+Put `true` or `false` text as text/plain.
+
+</td></tr>
+
+<tr><td>
+
+Add a comment when enabling/disabling and authorizing/unauthorizing an agent
+
+/td>
+
+<td>
+
 Agent enabled/authorized data is exposed in the `enabledInfo` and `authorizedInfo` nodes:
  
 ```HTML
@@ -1135,19 +1352,52 @@ Agent enabled/authorized data is exposed in the `enabledInfo` and `authorizedInf
 </agent>
  
 ```
- 
-`GET` and `PUT` requests are supported to the following URLs: [`http://teamcity:8111/app/rest/agents/<agentLocator>/enabledInfo`](http://teamcity:8111/app/rest/agents/<agentLocator>/enabledInfo) and [`http://teamcity:8111/app/rest/agents/<agentLocator>/authorized`](http://teamcity:8111/app/rest/agents/<agentLocator>/authorized).
- 
-On `PUT` only status and comment/text sub\-items are taken into account:
+
+`GET` and `PUT` requests are supported for the following URLs: [`http://teamcity:8111/app/rest/agents/<agentLocator>/enabledInfo`](http://teamcity:8111/app/rest/agents/<agentLocator>/enabledInfo) and [`http://teamcity:8111/app/rest/agents/<agentLocator>/authorized`](http://teamcity:8111/app/rest/agents/<agentLocator>/authorized).
+
+On `PUT` only status and comment/text sub-items are taken into account. An example of disabling an agent with a comment:
  
 ```Shell
 curl -v -u user:password --request PUT "http://teamcity:8111/app/rest/agents/id:1/enabledInfo" --data "<enabledInfo status='false'><comment><text>commentText</text></comment></enabledInfo>" --header "Content-Type:application/xml
  
 ```
+
+</td></tr>
+
+<tr><td>
+
+Get/put an agent's single field
+
+/td>
+
+<td>
+
+```Shell
+
+GET/PUT http://teamcity:8111/app/rest/agents/<agentLocator>/<field_name>
  
-Get/PUT agent's single field: `GET/PUT` [`http://teamcity:8111/app/rest/agents/<agentLocator>/<field_name>`](http://teamcity:8111/app/rest/agents/<agentLocator>/<field_name>).
+```
+
+</td></tr>
+
+<tr><td>
+
+Delete a build agent
+
+/td>
+
+<td>
+
+```Shell
+
+DELETE http://teamcity:8111/app/rest/agents/<agentLocator>
  
-Delete a build agent: `DELETE` [`http://teamcity:8111/app/rest/agents/<agentLocator>`](http://teamcity:8111/app/rest/agents/<agentLocator>).
+```
+
+</td></tr>
+
+
+</table>
  
 #### Agent Pools
  
