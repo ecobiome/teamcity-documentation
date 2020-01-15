@@ -8,18 +8,6 @@ In TeamCity a build goes through several states:
 
 In TeamCity all information about a particular build, whether it is queued, running or finished, is accumulated on the __Build Results__ page. The page can be accessed by clicking the build number or build status link.
 
-Besides providing the build information, this page enables you to:
-* [run a custom build](triggering-a-custom-build.md) using the __Run__ button
-* use the __Actions__ menu to do the following: 
-  * add a build to [favorites](favorite-build.md)
-  * add a comment
-  * [pin the build](pinned-build.md)
-  * [tag the build](build-tag.md)
-  * change the build status, marking the build as [failed](changing-build-status-manually.md#Marking+build+as+failed) or [successful](changing-build-status-manually.md#Marking+build+as+successful)
-  * [label this build sources](vcs-labeling.md)
-  * remove the build
-* [edit the configuration settings](creating-and-editing-build-configurations.md#Creating+Build+Configuration+From+Template)
-
 On this page:
 
 <tag-list of="chapter" mode="tree" depth="4"/>
@@ -212,7 +200,7 @@ Shows the sequence in which the tests were run. Click the header above this colu
 
 </td></tr></table>
 
-#### Test History
+### Test History
 
 To navigate to the history of a particular test, click the arrow next to the test name and select __Test History__ from the drop-down menu.   
 There are several places where tests are listed and from where you can open Test History.   
@@ -230,7 +218,7 @@ Clicking the __Test history__ link opens the __Test details__ page where you can
 * Complete test history table containing information about the test status, its duration, and information on the builds this test was run in.
 
 
-#### Test Duration Graph
+### Test Duration Graph
 
 The Test Duration graph (see the screenshot above) is useful for comparing the amount of time it takes individual tests to run on the builds of this build configuration.
 
@@ -300,6 +288,33 @@ The tab consists of:
 For each Maven build the TeamCity agent gathers Maven specific build details, which are displayed on the __Maven Build Info__ tab of the __Build results__ after the build is finished.
 
 [//]: # (Internal note. Do not delete. "Working with Build Resultsd371e671.txt")    
+
+## Build Actions
+
+Besides providing information about the build, the __Build Results__ page enables you to:
+* [run a custom build](triggering-a-custom-build.md) using the __Run__ button
+* use the __Actions__ menu to do the following: 
+  * add a build to [favorites](favorite-build.md)
+  * add a comment
+  * [pin the build](pinned-build.md)
+  * [tag the build](build-tag.md)
+  * change the build status, marking the build as [failed](changing-build-status-manually.md#Marking+build+as+failed) or [successful](changing-build-status-manually.md#Marking+build+as+successful)
+  * [label this build sources](vcs-labeling.md)
+  * [remove the build](#Removing+Build)
+* [edit the configuration settings](creating-and-editing-build-configurations.md#Configuring+Settings)
+
+### Removing Build
+
+The __Action__ menu provides two build removal options:
+* __Remove from queue__ – for a running build. This action cancels the running build and removes it from the [build queue](build-queue.md). The build itself stays in the [build history](build-history.md).   
+The "Remove the build from queue" dialog allows you to:
+    * Comment your action.
+    * If the current build is a part of a [build chain](build-chain.md), selectively cancel other builds in the chain.
+* __Remove__ – for a finished build. This action removes a finished build from the build history and deletes its build logs and artifacts from TeamCity.   
+The "Remove this build" dialog allows you to:
+    * Comment your action.
+    * If the current build is a part of a build chain, selectively remove or cancel other builds in the chain. Note that among all selected builds, finished builds will be _removed from TeamCity_ while running builds will be _removed from the queue_. The removal dialog shows current states of all the chain builds so you can estimate the results of your action.
+    * Leave statistical data. If you select this option, TeamCity will keep the build statistics so it can be reflected on the project [statistic charts](statistic-charts.md).
 
 ## Internal Build ID
 
